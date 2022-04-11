@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+
+body {
+    font-family: 'Potta One', cursive;
+    background-color: #6BCB77;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: auto;
+    width: fit-content
+}
+
+.heading {
+    text-align: center;
+    color: #FF6B6B;
+}
+.note{
+   text-align: center;
+    font-size: 20px;
+   
+}
+
+.won {
+    color: #FFD93D;
+    font-size: 40px;
+    text-align: center;
+    display: none;
+}
+
+@media only screen and (max-width: 400px) {
+    .won {
+        color: #FFD93D;
+        font-size: 25px;
+        text-align: center;
+    }
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+
+.cell:hover {
+    font-size: 29px;
+    color: black;
+}
+
+.black {
+    background-color: #4D96FF;
+    color: #FFD93D;
+
+}
+
+.white {
+    background-color: #FFD93D;
+    color: #4D96FF;
+}
+
+.btn_container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn {
+    background-color: #FFD93D;
+    padding: 14px 40px;
+    color: #FF6B6B;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px dashed #FFD93D;
+    font-weight: 800;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .4s;
+
+}
+
+.btn span:last-child {
+    display: none;
+}
+
+.btn:hover {
+    transition: .4s;
+    border: 2px dashed #FFD93D;
+    background-color: #FF6B6B;
+    color: #FFD93D;
+}
+
+.btn:active {
+    background-color: #87dbd0;
+}
+
+.toastify {
+    padding: 12px 20px;
+    color: #ffffff;
+    display: inline-block;
+    box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.12), 0 10px 36px -4px rgba(77, 96, 232, 0.3);
+    background: -webkit-linear-gradient(315deg, #4D96FF, #5477f5);
+    background: linear-gradient(135deg, #4D96FF, #5477f5);
+    position: fixed;
+    top: -150px;
+    right: 15px;
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.toastify.on {
+    opacity: 1;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eLitmus Assignment</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body onload="startAgain();">
+  
+    <h1 class="heading">Hash's Gaming Console </h1>
+    <h2 class="won" id="congo">Congratulations! You've won the game </h2>
+. 
+    <div id="grid-container"></div>
+
+    <div class="btn_container">
+        <h2 id="question"></h2>
+        <button onClick="start()" id="startBtn" class="btn"> Start </button>
+        <button onClick="startAgain()" id="startBtn" class="btn"> Reset Game </button>
+    </div>
+      
+        <h1 class="note" id="note">Instructions: <li>Click on the right answer from the grid for the given question.</li><li>The grid size and difficulty level of question varies depending on the level(easy, meium, hard).</li>
+       <li> Easy level contains four questions</li>
+        <li>Meadium and Hard levels contains 3 question </li>each. 
+        </h1>
+</body>
+<script src="toastify.js"></script>
+<script src="confetti.js"></script>
+<script type="text/javascript" src="/game.js"></script>
+
+</html>
